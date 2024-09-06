@@ -1,5 +1,6 @@
 const axios = require('axios');
 
+
 const url = 'https://api.studio.thegraph.com/proxy/71118/ssv-network-holesky/version/latest';
 
 async function getAccountData(account) {
@@ -21,7 +22,9 @@ query MyQuery {
             query: query
 
         });
-
+        console.log(response.data);
+        const values = response.data.data.account;
+        console.log(values)
         console.log(response.data);
     } catch (error) {
         console.error('Error fetching account data:', error);
