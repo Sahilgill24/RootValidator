@@ -1,6 +1,21 @@
 #!/bin/bash
 
-# function for Linux (Ubuntu)
+echo "checking docker installation ..."
+
+if command -v docker &> /dev/null; then
+    echo "docker is installed"
+else
+    echo "docker is not installed"
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        install_docker_Linux
+    elif [[ "$OSTYPE" == "darwin"* ]]; then
+        install_docker_mac
+    else
+        echo "OS not supported"
+    
+fi
+
+
 
 install_docker_Linux() {
     sudo apt-get update
@@ -16,4 +31,7 @@ install_docker_Linux() {
 
 install_docker_mac() {
     echo "installing docker for mac"
+    brew install --cask docker
 }
+
+# referances https://stackoverflow.com/questions/394230/how-to-detect-the-os-from-a-bash-script
