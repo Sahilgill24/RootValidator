@@ -66,7 +66,7 @@ const NavButton = ({
   return (
     <button
       className={`border-t rounded-full tracking-tight font-medium px-4 py-1 text-sm cursor-pointer text-secondary-foreground 
-        ${navItem.label == activeNavItem.label && 'border-none bg-primary text-black'}`}
+        ${navItem.label == activeNavItem.label && 'border-none bg-primary !text-black'}`}
       onClick={() => setActiveNavItem(navItem)}
     >
       {navItem.label}

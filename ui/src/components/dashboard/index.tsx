@@ -1,6 +1,5 @@
 import { useState } from "react";
 import DKGCeremonyDashboard from "./dkg";
-import AccountDashboard from "./account";
 import { NavItem } from "@/lib/types";
 import Navbar from "./navbar";
 
@@ -9,10 +8,6 @@ const Dashboard = () => {
     {
       label: "DKG Ceremony",
       component: <DKGCeremonyDashboard />,
-    },
-    {
-      label: "Account",
-      component: <AccountDashboard />,
     },
   ];
   const [activeNavItem, setActiveNavItem] = useState<NavItem>(navItems[0]);

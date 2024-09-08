@@ -27,11 +27,11 @@ const HomePage = () => {
         <h1 className="text-7xl font-black mb-4 bg-gradient-to-br tracking-tight text-transparent bg-clip-text from-primary from-[20%] to-accent/50 to-[200%]">
           RootValidator
         </h1>
-        {/* TODO: Idhar description change krdiyo */}
         <p className="text-lg font-medium text-secondary-foreground mb-8">
-
-          <span className="font-bold text-primary">The Ultimate GUI for DKG initiation along with an Account Dashboards</span>
-
+          The Ultimate GUI for {" "}
+          <span className="font-bold text-primary">
+            DKG ceremony initiation
+          </span>
         </p>
         <Button
           className="px-8 text-base border font-medium"
