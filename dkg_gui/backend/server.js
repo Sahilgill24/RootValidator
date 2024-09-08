@@ -1,5 +1,5 @@
 const express = require('express');
-const { exec } = require('child_process');
+const { exec, spawn } = require('child_process');
 const fs = require('fs');
 const yaml = require('js-yaml');
 const path = require('path');
@@ -8,8 +8,8 @@ const { config } = require('process');
 const app = express();
 app.use(express.json());
 
-const configDirectory = path.join(__dirname, 'config');
-const yamlFilePath = path.join(__dirname, 'config', 'init.yaml');
+const configDirectory = path.join(__dirname, 'data', 'config');
+const yamlFilePath = path.join(__dirname, 'data', 'config', 'init.yaml');
 
 app.get('/', (req, res) => {
     run_script();
@@ -34,6 +34,12 @@ function run_script() {
         console.log(stdout);
     });
     console.log("successfully run the script and the container is running")
+
+    const script = spawn('bash', ['./script.sh']);
+
+    script.stdout.on('data', (data) => {
+        console.log(`stdout: ${data}`);
+    });
 
 }
 

@@ -1,0 +1,35 @@
+{"L":"DEBUG","T":"2024-09-08T11:09:04.402Z","M":"logger is ready","level":"debug","encoder":"json","format":"capitalColor","file_options":{"FileName":"/data/debug.log","MaxSize":0,"MaxBackups":0}}
+{"L":"INFO","T":"2024-09-08T11:09:04.407Z","N":"dkg-initiator","M":"🪛 Initiator`s","Version":"v2.1.0"}
+{"L":"INFO","T":"2024-09-08T11:09:04.415Z","N":"dkg-initiator","M":"🔑 opening initiator RSA private key file"}
+{"L":"INFO","T":"2024-09-08T11:09:04.861Z","N":"dkg-initiator","M":"🚀 Starting dkg ceremony","initiator public key":"LS0tLS1CRUdJTiBSU0EgUFVCTElDIEtFWS0tLS0tCk1JSUJJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBeHRpc25sSnFGZldkYmFjUEV3NmQKSGdselBBV0trWitSSVZNQlFFc3k2WHJKTmYvU2ZYaTMzZ3dEeldXQkNtVEVCNWh4MTU3RTJPcmcxcFp1L0x0NQpNMzYzSTF2RmJta3NHNllEbmlNMk1BZWI0Rm42UDQ1bkEwd0RkaytEQTQyc1J3SU1wUzBuMlpJeWJhdVdsYlJZCjQxWlI1VDVGanA4azd6QzZPZEtaN2MvTmQwZXY3Qlg0S0d3bDVtd0xvd0tPMDVnNmFvSitXUVRqM0dkTU1NNDUKVFJ3MWJWM0oxSFVxTjFSak52VWZOUmh6OU5ISnR0NnZLeGpKOVpyOExyNW10SXE1aVh1SjJuNU5UcjRycE14VQo0NDhSdnR5dENOdVhNdmJ4STRBQ2JxR3Zoa0NvaDhtTnRncnh4QWtuS1pmbWM2T3VyT0VNUEYya2FXVm5YcmR2CnR3SURBUUFCCi0tLS0tRU5EIFJTQSBQVUJMSUMgS0VZLS0tLS0K","operator IDs":[4,11,24,29],"init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307"}
+{"L":"INFO","T":"2024-09-08T11:09:04.862Z","N":"dkg-initiator","M":"phase 1: sending init message to operators","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307"}
+{"L":"DEBUG","T":"2024-09-08T11:09:05.430Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":11,"method":"init"}
+{"L":"DEBUG","T":"2024-09-08T11:09:05.430Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":29,"method":"init"}
+{"L":"DEBUG","T":"2024-09-08T11:09:05.907Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":4,"method":"init"}
+{"L":"DEBUG","T":"2024-09-08T11:09:08.714Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":24,"method":"init"}
+{"L":"INFO","T":"2024-09-08T11:09:08.747Z","N":"dkg-initiator","M":"phase 1: ✅ verified operator init responses signatures","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307"}
+{"L":"INFO","T":"2024-09-08T11:09:08.748Z","N":"dkg-initiator","M":"phase 2: ➡️ sending operator data (exchange messages) required for dkg","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307"}
+{"L":"DEBUG","T":"2024-09-08T11:09:08.939Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":11,"method":"dkg"}
+{"L":"DEBUG","T":"2024-09-08T11:09:08.944Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":24,"method":"dkg"}
+{"L":"DEBUG","T":"2024-09-08T11:09:09.072Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":4,"method":"dkg"}
+{"L":"DEBUG","T":"2024-09-08T11:09:09.109Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":29,"method":"dkg"}
+{"L":"INFO","T":"2024-09-08T11:09:09.140Z","N":"dkg-initiator","M":"phase 2: ✅ verified operator responses (deal messages) signatures","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307"}
+{"L":"INFO","T":"2024-09-08T11:09:09.140Z","N":"dkg-initiator","M":"phase 3: ➡️ sending deal dkg data to all operators","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307"}
+{"L":"DEBUG","T":"2024-09-08T11:09:29.012Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":24,"method":"dkg"}
+{"L":"DEBUG","T":"2024-09-08T11:09:29.012Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":11,"method":"dkg"}
+{"L":"DEBUG","T":"2024-09-08T11:09:29.086Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":4,"method":"dkg"}
+{"L":"DEBUG","T":"2024-09-08T11:09:29.123Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":29,"method":"dkg"}
+{"L":"INFO","T":"2024-09-08T11:09:29.146Z","N":"dkg-initiator","M":"phase 2: ✅ verified operator dkg results signatures","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307"}
+{"L":"INFO","T":"2024-09-08T11:09:29.148Z","N":"dkg-initiator","M":"🏁 DKG completed, verifying deposit data and ssv payload","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307"}
+{"L":"INFO","T":"2024-09-08T11:09:29.308Z","N":"dkg-initiator","M":"✅ deposit data was successfully reconstructed","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307"}
+{"L":"INFO","T":"2024-09-08T11:09:29.309Z","N":"dkg-initiator","M":"✅ verified master signature for ssv contract data","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307"}
+{"L":"DEBUG","T":"2024-09-08T11:09:29.540Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":11,"method":"results"}
+{"L":"DEBUG","T":"2024-09-08T11:09:29.540Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":24,"method":"results"}
+{"L":"DEBUG","T":"2024-09-08T11:09:29.663Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":4,"method":"results"}
+{"L":"DEBUG","T":"2024-09-08T11:09:29.689Z","N":"dkg-initiator","M":"operator responded","init ID":"45710ec111604c7b8943cc33e658c1b381084851bde89307","operator":29,"method":"results"}
+{"L":"DEBUG","T":"2024-09-08T11:09:29.691Z","N":"dkg-initiator","M":"DKG ceremony completed","id":"45710ec111604c7b8943cc33e658c1b381084851bde89307","nonce":0,"pubkey":"99319a62861f30b6478f207821791ed312a2d3d94ae832bcb0bb00a8ddf6a316ae9c845f61218956ee129199c7b06845"}
+{"L":"INFO","T":"2024-09-08T11:09:29.693Z","N":"dkg-initiator","M":"🎯 All data is validated."}
+{"L":"INFO","T":"2024-09-08T11:09:29.763Z","N":"dkg-initiator","M":"💾 Writing deposit data json","path":"/data/ceremony-2024-09-08--11-09-29.762/000000-0x99319a62861f30b6478f207821791ed312a2d3d94ae832bcb0bb00a8ddf6a316ae9c845f61218956ee129199c7b06845"}
+{"L":"INFO","T":"2024-09-08T11:09:29.764Z","N":"dkg-initiator","M":"💾 Writing keyshares payload to file","path":"/data/ceremony-2024-09-08--11-09-29.762/000000-0x99319a62861f30b6478f207821791ed312a2d3d94ae832bcb0bb00a8ddf6a316ae9c845f61218956ee129199c7b06845"}
+{"L":"INFO","T":"2024-09-08T11:09:29.765Z","N":"dkg-initiator","M":"💾 Writing proofs to file","path":"/data/ceremony-2024-09-08--11-09-29.762/000000-0x99319a62861f30b6478f207821791ed312a2d3d94ae832bcb0bb00a8ddf6a316ae9c845f61218956ee129199c7b06845"}
+{"L":"INFO","T":"2024-09-08T11:09:29.802Z","N":"dkg-initiator","M":"🚀 DKG ceremony completed"}

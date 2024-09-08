@@ -54,7 +54,7 @@ fi
 # Run the Docker command with the path to the config files
 echo "Running the SSV DKG Docker container..."
 docker run --rm --platform linux/amd64 \
--v "$CONFIG_PATH":/data/config -it \
+-v "$CONFIG_PATH":/data/config  \
 "bloxstaking/ssv-dkg:latest" init \
 --configPath /data/config/init.yaml
 

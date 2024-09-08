@@ -45,10 +45,10 @@ async function getoperators(owner) {
 }
 getoperators("0x00000000092c1d0569858c6c09b677540bee2d30");
 
-async function clusterSnapshot(clusterId) {
+async function clusterSnapshot(owner) {
     const query = `
 query ClusterSnapshot {
-    cluster(id: "${clusterId}") {
+    cluster(id: "${owner}") {
         active
         balance
         index
@@ -68,6 +68,7 @@ query ClusterSnapshot {
         console.error('Error fetching cluster snapshot:', error);
     }
 }
+clusterSnapshot("0x00000000092c1d0569858c6c09b677540bee2d30");
 
 async function getValidators(owner) {
     const query = `
@@ -94,6 +95,7 @@ query ListOfValidatorsPerOwner {
         console.error('Error fetching validators:', error);
     }
 }
+getValidators("0x00000000092c1d0569858c6c09b677540bee2d30");
 
 async function getNonce(account) {
     const query = `
@@ -113,3 +115,5 @@ query AccountNonceQuery {
         console.error('Error fetching nonce:', error);
     }
 }
+
+getNonce("0x00000000092c1d0569858c6c09b677540bee2d30");
