@@ -29,9 +29,9 @@ const HomePage = () => {
         </h1>
         {/* TODO: Idhar description change krdiyo */}
         <p className="text-lg font-medium text-secondary-foreground mb-8">
-          The Nexus of{" "}
-          <span className="font-bold text-primary">Cross-Chain Trading</span> &{" "}
-          <span className="font-bold text-primary">Portfolio Mastery</span>
+
+          <span className="font-bold text-primary">The Ultimate GUI for DKG initiation along with an Account Dashboards</span>
+
         </p>
         <Button
           className="px-8 text-base border font-medium"
