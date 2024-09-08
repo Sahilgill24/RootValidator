@@ -41,7 +41,7 @@ else
 fi
 
 # Path to config folder (modify this if needed)
-CONFIG_PATH="$(pwd)"
+CONFIG_PATH="./data/config"
 
 # Check if the config folder exists
 if [ -d "$CONFIG_PATH" ]; then
@@ -54,7 +54,7 @@ fi
 # Run the Docker command with the path to the config files
 echo "Running the SSV DKG Docker container..."
 docker run --rm --platform linux/amd64 \
--v "$CONFIG_PATH":/data -it \
+-v "$CONFIG_PATH":/data/config -it \
 "bloxstaking/ssv-dkg:latest" init \
 --configPath /data/config/init.yaml
 
