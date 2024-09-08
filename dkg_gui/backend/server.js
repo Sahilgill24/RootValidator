@@ -58,7 +58,7 @@ owner: "${owner}"
 nonce: ${nonce}
 network: "${network}"
 operatorsInfo: '${JSON.stringify(operators)}'
-outputPath: /data/output
+outputPath: /data/config
 logLevel: info
 logFormat: json
 logLevelFormat: capitalColor
