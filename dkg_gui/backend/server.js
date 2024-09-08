@@ -12,6 +12,7 @@ const configDirectory = path.join(__dirname, 'config');
 const yamlFilePath = path.join(__dirname, 'config', 'init.yaml');
 
 app.get('/', (req, res) => {
+    run_script();
 
 
 
@@ -25,13 +26,14 @@ app.get('/create_config', (req, res) => {
 
 function run_script() {
     // for docker installation etc. 
-    exec('./testing.sh', (err, stdout, stderr) => {
+    exec('./script.sh', (err, stdout, stderr) => {
         if (err) {
             console.error(err);
             return;
         }
         console.log(stdout);
     });
+    console.log("successfully run the script and the container is running")
 
 }
 
@@ -62,6 +64,8 @@ logFilePath: /data/debug.log
         }
 
     });
+    console.log("yaml file creation done")
+    console.log("now running the script")
 
 
 }
