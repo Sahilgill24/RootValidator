@@ -16,16 +16,19 @@ app.get('/', (req, res) => {
 
 
 
+
 })
 
-app.get('/create_config', (req, res) => {
-    configyamlfile(req.body);
+app.post('/create_config', (req, res) => {
+    console.log(req.body.data)
+    configyamlfile(req.body.data);
+    res.send("config file created")
 
 
 })
 
 function run_script() {
-    // for docker installation etc. 
+
     exec('./script.sh', (err, stdout, stderr) => {
         if (err) {
             console.error(err);
@@ -46,6 +49,7 @@ function run_script() {
 function configyamlfile(config) {
     // will write the init.yaml file 
     const { validators, operatorIDs, withdrawAddress, owner, nonce, network, operators } = config
+    console.log(operatorIDs)
     const yamlcontent = `
 validators: ${validators}
 operatorIDs: [${operatorIDs.join(', ')}]
@@ -61,6 +65,7 @@ logLevelFormat: capitalColor
 logFilePath: /data/debug.log
 
 `
+    console.log(operatorIDs)
     if (!fs.existsSync(configDirectory)) {
         fs.mkdirSync(configDirectory);
     }

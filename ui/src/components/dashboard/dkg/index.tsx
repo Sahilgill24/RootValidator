@@ -18,6 +18,7 @@ const DKGCeremonyDashboard = () => {
   const { toast } = useToast();
 
   const handleInitiate = async () => {
+    // console.log(selectedOperators);
     const data: DKG = {
       validators: 10,
       operatorIDs: selectedOperators.map((operator) => operator.id),
@@ -27,8 +28,10 @@ const DKGCeremonyDashboard = () => {
       network: "holesky",
       operators: selectedOperators,
     };
+    console.log(data)
+    console.log(data.operatorIDs)
 
-    const response = await axios.get(
+    const response = await axios.post(
       import.meta.env.VITE_BACKEND_URI + "/create_config",
       {
         data: data,
