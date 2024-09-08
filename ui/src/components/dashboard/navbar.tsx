@@ -1,5 +1,4 @@
 import { NavItem } from "@/lib/types";
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAccount, useDisconnect } from "wagmi";
 import CopyAddress from "../ui/copy-address";
@@ -66,7 +65,7 @@ const NavButton = ({
 }) => {
   return (
     <button
-      className={`border-t rounded-full px-4 py-1 text-sm cursor-pointer text-secondary-foreground 
+      className={`border-t rounded-full tracking-tight font-medium px-4 py-1 text-sm cursor-pointer text-secondary-foreground 
         ${navItem.label == activeNavItem.label && 'border-none bg-primary text-black'}`}
       onClick={() => setActiveNavItem(navItem)}
     >

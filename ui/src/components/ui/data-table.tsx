@@ -1,3 +1,5 @@
+"use client"
+
 import {
   ColumnDef,
   flexRender,
@@ -30,8 +32,8 @@ export function DataTable<TData, TValue>({
   })
 
   return (
-    <div className="rounded-md border-t border-l">
-      <Table className="bg-gradient-to-br from-accent/40 via-card to-background to-[80%]">
+    <div className="rounded-md border">
+      <Table>
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>

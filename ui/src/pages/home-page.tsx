@@ -24,7 +24,7 @@ const HomePage = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h1 className="text-7xl font-black mb-4 bg-gradient-to-br text-transparent bg-clip-text from-primary from-[20%] to-accent/50 to-[200%]">
+        <h1 className="text-7xl font-black mb-4 bg-gradient-to-br tracking-tight text-transparent bg-clip-text from-primary from-[20%] to-accent/50 to-[200%]">
           RootValidator
         </h1>
         {/* TODO: Idhar description change krdiyo */}
